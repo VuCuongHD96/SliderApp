@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A414FA2F291DEF5400C351F4 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A414FA2D291DEF5400C351F4 /* ImageCell.xib */; };
+		A414FA30291DEF5400C351F4 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414FA2E291DEF5400C351F4 /* ImageCell.swift */; };
+		A414FA32291E071500C351F4 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A414FA31291E071500C351F4 /* GradientButton.swift */; };
+		A4D78470291E2C1100D362EA /* AllowNotificationTutorialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D7846F291E2C1100D362EA /* AllowNotificationTutorialViewModel.swift */; };
+		A4D78475291E303800D362EA /* AllowNotificationTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D78473291E303800D362EA /* AllowNotificationTutorialViewController.swift */; };
+		A4D78476291E303800D362EA /* AllowNotificationTutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4D78474291E303800D362EA /* AllowNotificationTutorialViewController.xib */; };
 		A4E133E928AB310300BCC879 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E133E828AB310300BCC879 /* AppDelegate.swift */; };
 		A4E133EB28AB310300BCC879 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E133EA28AB310300BCC879 /* SceneDelegate.swift */; };
 		A4E133ED28AB310300BCC879 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E133EC28AB310300BCC879 /* ViewController.swift */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A414FA2D291DEF5400C351F4 /* ImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		A414FA2E291DEF5400C351F4 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		A414FA31291E071500C351F4 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		A4D7846F291E2C1100D362EA /* AllowNotificationTutorialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowNotificationTutorialViewModel.swift; sourceTree = "<group>"; };
+		A4D78473291E303800D362EA /* AllowNotificationTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowNotificationTutorialViewController.swift; sourceTree = "<group>"; };
+		A4D78474291E303800D362EA /* AllowNotificationTutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllowNotificationTutorialViewController.xib; sourceTree = "<group>"; };
 		A4E133E528AB310300BCC879 /* SliderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SliderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E133E828AB310300BCC879 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4E133EA28AB310300BCC879 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +49,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A414FA2C291DEF5400C351F4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A414FA2D291DEF5400C351F4 /* ImageCell.xib */,
+				A414FA2E291DEF5400C351F4 /* ImageCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A4D78471291E2FBE00D362EA /* AllowNotificationTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				A414FA2C291DEF5400C351F4 /* Cell */,
+				A4D7846F291E2C1100D362EA /* AllowNotificationTutorialViewModel.swift */,
+				A4D78473291E303800D362EA /* AllowNotificationTutorialViewController.swift */,
+				A4D78474291E303800D362EA /* AllowNotificationTutorialViewController.xib */,
+			);
+			path = AllowNotificationTutorial;
+			sourceTree = "<group>";
+		};
+		A4D78472291E300C00D362EA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A4E133E828AB310300BCC879 /* AppDelegate.swift */,
+				A4E133EA28AB310300BCC879 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		A4E133DC28AB310300BCC879 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +97,11 @@
 		A4E133E728AB310300BCC879 /* SliderApp */ = {
 			isa = PBXGroup;
 			children = (
-				A4E133E828AB310300BCC879 /* AppDelegate.swift */,
-				A4E133EA28AB310300BCC879 /* SceneDelegate.swift */,
-				A4E133EC28AB310300BCC879 /* ViewController.swift */,
+				A4D78472291E300C00D362EA /* Application */,
+				A4D78471291E2FBE00D362EA /* AllowNotificationTutorial */,
+				A414FA31291E071500C351F4 /* GradientButton.swift */,
 				A4E133EE28AB310300BCC879 /* Main.storyboard */,
+				A4E133EC28AB310300BCC879 /* ViewController.swift */,
 				A4E133F128AB310500BCC879 /* Assets.xcassets */,
 				A4E133F328AB310500BCC879 /* LaunchScreen.storyboard */,
 				A4E133F628AB310500BCC879 /* Info.plist */,
@@ -126,6 +168,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4E133F528AB310500BCC879 /* LaunchScreen.storyboard in Resources */,
+				A4D78476291E303800D362EA /* AllowNotificationTutorialViewController.xib in Resources */,
+				A414FA2F291DEF5400C351F4 /* ImageCell.xib in Resources */,
 				A4E133F228AB310500BCC879 /* Assets.xcassets in Resources */,
 				A4E133F028AB310300BCC879 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A414FA32291E071500C351F4 /* GradientButton.swift in Sources */,
 				A4E133ED28AB310300BCC879 /* ViewController.swift in Sources */,
+				A414FA30291DEF5400C351F4 /* ImageCell.swift in Sources */,
+				A4D78470291E2C1100D362EA /* AllowNotificationTutorialViewModel.swift in Sources */,
 				A4E133E928AB310300BCC879 /* AppDelegate.swift in Sources */,
 				A4E133EB28AB310300BCC879 /* SceneDelegate.swift in Sources */,
+				A4D78475291E303800D362EA /* AllowNotificationTutorialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

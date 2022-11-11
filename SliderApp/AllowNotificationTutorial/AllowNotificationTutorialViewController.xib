@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AllowNotificationTutorialViewController" customModule="SliderApp" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="iEX-F7-ZKQ" id="fBW-8f-hzd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ob5-gG-b29">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kiv-MV-aBQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iEX-F7-ZKQ">
+                                <rect key="frame" x="62" y="137" width="290" height="582"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="x5W-cf-E17">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M4v-rF-K7C">
+                                <rect key="frame" x="62" y="729" width="290" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5x-vk-ZQC">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYc-6p-uWr" customClass="GradientButton" customModule="SliderApp" customModuleProvider="target">
+                                        <rect key="frame" x="145" y="0.0" width="145" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Setting"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="M4v-rF-K7C" firstAttribute="trailing" secondItem="iEX-F7-ZKQ" secondAttribute="trailing" id="90y-nC-OLK"/>
+                            <constraint firstItem="M4v-rF-K7C" firstAttribute="leading" secondItem="iEX-F7-ZKQ" secondAttribute="leading" id="bPp-7W-9rb"/>
+                            <constraint firstItem="iEX-F7-ZKQ" firstAttribute="centerY" secondItem="kiv-MV-aBQ" secondAttribute="centerY" constant="-20" id="cTx-fG-5m7"/>
+                            <constraint firstItem="iEX-F7-ZKQ" firstAttribute="centerX" secondItem="kiv-MV-aBQ" secondAttribute="centerX" id="kh9-YZ-4rq"/>
+                            <constraint firstItem="M4v-rF-K7C" firstAttribute="top" secondItem="iEX-F7-ZKQ" secondAttribute="bottom" constant="10" id="ldE-Ab-n9J"/>
+                            <constraint firstItem="iEX-F7-ZKQ" firstAttribute="height" secondItem="kiv-MV-aBQ" secondAttribute="height" multiplier="0.649554" id="x3b-M3-I9P"/>
+                            <constraint firstItem="iEX-F7-ZKQ" firstAttribute="width" secondItem="kiv-MV-aBQ" secondAttribute="width" multiplier="0.700483" id="yEY-bu-2Xr"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ob5-gG-b29" secondAttribute="trailing" id="1G0-Ws-gyY"/>
+                <constraint firstAttribute="bottom" secondItem="ob5-gG-b29" secondAttribute="bottom" id="8AD-mC-dao"/>
+                <constraint firstItem="ob5-gG-b29" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qOn-79-GT0"/>
+                <constraint firstItem="ob5-gG-b29" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="u7z-hc-BCX"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="100"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
